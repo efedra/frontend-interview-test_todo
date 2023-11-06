@@ -68,12 +68,14 @@ export const ModalCreateItem: React.FC<ModalCreateItemProps> = ({
                   isCategories
                     ? categoriesAdded({ name, description })
                     : tasksAdded({
+
                         name,
                         description,
-                        category: setSelected,
+                        category: selected,
                       })
                 );
                 clearState();
+
                 setActive(false);
               }
             : () => {}
