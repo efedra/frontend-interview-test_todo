@@ -1,5 +1,5 @@
 /* VENDOR */
-import { useState } from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
 
@@ -10,8 +10,8 @@ import { ModalInput } from "./ModalInput";
 import { ModalRow } from "./ModalRow";
 import { ModalTextarea } from "./ModalTextarea";
 import { ModalFooter } from "./ModalFooter";
-import { tasksAdded } from "../features/tasksSlice";
-import { categoriesAdded } from "../features/categoriesSlice";
+import { tasksAdded } from "../../redux/slices/tasksSlice";
+import { categoriesAdded } from "../../redux/slices/categoriesSlice";
 
 interface ModalCreateItemProps {
   active: boolean;
